@@ -1,0 +1,37 @@
+﻿@model DotRaces.Models.OSUSurvey
+@{
+    ViewBag.Title = "Study Complete";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(x => x.SurveyID)
+    <table style="margin: 0 auto;">
+        <tr>
+            <th class="text-center">
+                <h2 class="text-center">Study Complete</h2>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <p class="lead text-center">
+                    Thank you for your participation in this research.
+                </p>
+                <br /><br />
+                <p class="lead text-center">
+                    Please click through to answer the final set of questions in order to receive extra credit.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <p class="text-center">
+                    <a href="http://oregonstate.qualtrics.com/jfe/form/SV_7TFBMULRE7okWJT" class="btn btn-default btn-success"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;&nbsp;Final Questions</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+}
+
